@@ -72,8 +72,34 @@ const newCars = cars.splice(indexOfCar,1);
 console.log(cars);
 console.log(newCars);
 
-const arr = [1, 4, 9, 13, 27];
-const newArr = arr.map((e, i, a) => {
-    return `elem is ${e} index is ${i} array is ${a} `
-}).filter((e) => e > 9).reduce((a, e) => { return a += e });
-console.log(newArr);
+// const arr = [1, 4, 9, 13, 27];
+// const newArr = arr.map((e, i, a) => {
+//     return `elem is ${e} index is ${i} array is ${a} `
+// }).filter((e) => e > 9).reduce((a, e) => { return a += e });
+// console.log(newArr);
+
+
+const value = "name is \*'neha'";
+console.log(value.length);
+console.log(value);
+console.log(value.indexOf('is'));
+console.log(value.lastIndexOf('is', 7));
+
+const string = 'hey there';
+console.log(string.slice(0,2));
+console.log(string.slice(3,-3));
+console.log(string.substring(5));
+console.log(string.substring(5, -2));
+console.log(string.substr(5, 2));
+console.log(string.substr(-3));
+
+const str = 'how are you are';
+console.log(str.replace('are', 'Are'));
+console.log(str.charAt(1), str.charCodeAt(1));
+
+const val = '   neha  aneja';
+console.log(val.toUpperCase());
+console.log(val.toLocaleLowerCase());
+console.log(val.concat(" "+str));
+console.log(val.trim());
+console.log(val.split(" "));
